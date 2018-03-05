@@ -31,7 +31,7 @@ export default class CenaClientes extends Component {
 
                 <View style={styles.detalheCliente}>
                     <Image source={cliente2} />
-                    <Text>Lorem ipsum dolorem</Text>
+                    <Text style={styles.txtDetalheCliente}>Lorem ipsum dolorem</Text>
                 </View>
 
             </View>
@@ -58,5 +58,4 @@ const styles = StyleSheet.create({
         fontSize: 18,
         marginLeft: 20
     }
-
 });
