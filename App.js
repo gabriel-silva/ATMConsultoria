@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Navigator } from 'react-native-deprecated-custom-components';
+import CenaEmpresa from './src/components/CenaEmpresa';
 import CenaClientes from './src/components/CenaClientes';
 import CenaContatos from './src/components/CenaContatos';
 import CenaPrincipal from './src/components/CenaPrincipal';
@@ -29,6 +30,12 @@ export default class App extends Component {
           if (route.id === 'contato') {
             return (
               <CenaContatos navigator={navigator} />
+            );
+          }
+
+          if (route.id === 'empresa') {
+            return (
+              <CenaEmpresa navigator={navigator} />
             );
           }
 
