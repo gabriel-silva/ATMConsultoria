@@ -15,9 +15,9 @@ const cliente2 = require('../imgs/cliente2.png');
 export default class CenaClientes extends Component {
     render() {
         return (
-            <View>
+            <View style={styles.container}>
                 <StatusBar backgroundColor='#CCC' />
-                <BarraNavegacao />
+                <BarraNavegacao voltar navigator={this.props.navigator} />
 
                 <View style={styles.cabecalho}>
                     <Image source={detalheClientes} />
@@ -57,5 +57,9 @@ const styles = StyleSheet.create({
     txtDetalheCliente: {
         fontSize: 18,
         marginLeft: 20
+    },
+    container: {
+        flex: 1,
+        backgroundColor: '#FFF'
     }
 });

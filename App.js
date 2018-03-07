@@ -14,13 +14,13 @@ export default class App extends Component {
           //definir a cena com base na rota
           if (route.id === 'a') {
             return (
-              <CenaPrincipal />
+              <CenaPrincipal navigator={navigator} />
             );
           }
 
           if (route.id === 'b') {
             return (
-              <CenaClientes />
+              <CenaClientes navigator={navigator} />
             );
           }
 
