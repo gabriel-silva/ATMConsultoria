@@ -14,8 +14,8 @@ export default class CenaServico extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <StatusBar backgroundColor='#CCC' />
-                <BarraNavegacao voltar navigator={this.props.navigator} />
+                <StatusBar backgroundColor='#19D1C8' />
+                <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#19D1C8' />
 
                 <View style={styles.cabecalho}>
                     <Image source={detalheServico} />

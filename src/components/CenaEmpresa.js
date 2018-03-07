@@ -14,8 +14,8 @@ export default class CenaEmpresa extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <StatusBar backgroundColor='#CCC' />
-                <BarraNavegacao voltar navigator={this.props.navigator} />
+                <StatusBar backgroundColor='#EC7148' />
+                <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#EC7148' />
 
                 <View style={styles.cabecalho}>
                     <Image source={detalheEmpresa} />
