@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Navigator } from 'react-native-deprecated-custom-components';
 import CenaClientes from './src/components/CenaClientes';
+import CenaContatos from './src/components/CenaContatos';
 import CenaPrincipal from './src/components/CenaPrincipal';
 
 export default class App extends Component {
@@ -8,19 +9,26 @@ export default class App extends Component {
     return (
       <Navigator
         //objeto de rota
-        initialRoute={{ id: 'a' }}
+        initialRoute={{ id: 'principal' }}
         //function de callback
         renderScene={(route, navigator) => {
           //definir a cena com base na rota
-          if (route.id === 'a') {
+
+          if (route.id === 'principal') {
             return (
               <CenaPrincipal navigator={navigator} />
             );
           }
 
-          if (route.id === 'b') {
+          if (route.id === 'cliente') {
             return (
               <CenaClientes navigator={navigator} />
+            );
+          }
+
+          if (route.id === 'contato') {
+            return (
+              <CenaContatos navigator={navigator} />
             );
           }
 
